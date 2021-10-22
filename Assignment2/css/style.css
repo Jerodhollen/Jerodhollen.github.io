@@ -1,0 +1,80 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700&display=swap');
+body {
+    font-family: 'Space Mono';
+    background-color: black;
+    color: green;
+    width: 80%;
+    padding: 100px;
+}
+
+header {
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 20%;
+    background-color: black;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+h1 {
+    color: green;
+
+}
+
+h2 {
+    color: white;
+    margin: 5% 5% 0;
+}
+
+h3 {
+    color: yellow;
+    margin-top: 80px;
+}
+
+header address {
+    color: white;
+}
+
+ul {
+    margin-left: 10%;
+}
+
+li {
+    color: blue;
+}
+
+table{
+    width: 80%;
+    text-align: left;
+    margin: 2%
+}
+th {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+tr {
+    color: cyan;
+}
+
+img {
+    padding: 50px 70px 30px 50px;
+    margin-left: 200px;
+}
+
+figure {
+    color: white;
+    font-style: italic;
+    margin-left: 10%;
+}
+
+dt {
+    font-weight: bold;
+    color: yellow;
+    padding: 10px;
+}
