@@ -1,0 +1,92 @@
+
+/* Grid */
+.grid-container {
+    background-color: rgb(240, 240, 240);
+    top: 0;
+    left: 0; 
+    max-height: 500px;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Boxes */
+.box1 {
+    width: 0; 
+    height: 0; 
+    top: -81px;
+    left: -19px;
+    position: relative;
+    border-top: 125px solid transparent;
+    border-bottom: 125px solid transparent; 
+    border-right:125px solid lightslategray;
+    transform: rotate(45deg);
+}
+
+.box2 {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    border-top: 275px solid transparent;
+    border-bottom: 275px solid transparent; 
+    border-right: 275px solid black;
+    transform: rotate(360deg);
+}
+
+.box3 {
+    width: 0;
+    height: 0;
+    top: 325px;
+    left: 50px;
+    position: absolute;
+    border-top: 117px solid transparent;
+    border-bottom: 117px solid transparent; 
+    border-right: 117px solid lightgray;
+    transform: rotate(90deg);
+}
+
+.box4 {
+    width: 0;
+    height: 0;
+    top: 275px;
+    left: 0;
+    position: absolute;
+    border-top: 110px solid transparent;
+    border-bottom: 110px solid transparent;
+    border-left: 110px solid gold;
+}
+
+.box5 {
+    width: 0;
+    height: 0;
+    top: -20px;
+    left: 225px;
+    position: absolute;
+    border-top: 110px solid transparent;
+    border-bottom: 110px solid transparent;
+    border-left: 110px solid lightgrey;
+}
+
+.box6 {
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  
+  border-right:10px solid blue; 
+}
+
+.box7 {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+
+.box8 {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+
