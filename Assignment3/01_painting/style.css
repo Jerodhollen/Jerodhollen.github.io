@@ -4,7 +4,7 @@
     background-color: rgb(240, 240, 240);
     top: 0;
     left: 0; 
-    max-height: 500px;
+    min-height: 499px;
     max-width: 500px;
     position: relative;
     overflow: hidden;
@@ -38,12 +38,12 @@
 .box3 {
     width: 0;
     height: 0;
-    top: 325px;
-    left: 50px;
+    top: 331px;
+    left: 56px;
     position: absolute;
-    border-top: 117px solid transparent;
-    border-bottom: 117px solid transparent; 
-    border-right: 117px solid lightgray;
+    border-top: 112px solid transparent;
+    border-bottom: 112px solid transparent; 
+    border-right:112px solid whitesmoke; 
     transform: rotate(90deg);
 }
 
@@ -53,40 +53,53 @@
     top: 275px;
     left: 0;
     position: absolute;
-    border-top: 110px solid transparent;
-    border-bottom: 110px solid transparent;
-    border-left: 110px solid gold;
+    border-top: 113px solid transparent;
+    border-bottom: 113px solid transparent;
+    border-left: 113px solid gold;
 }
 
 .box5 {
     width: 0;
     height: 0;
-    top: -20px;
+    top: -85px;
     left: 225px;
     position: absolute;
-    border-top: 110px solid transparent;
-    border-bottom: 110px solid transparent;
-    border-left: 110px solid lightgrey;
+    border-top: 180px solid transparent;
+    border-bottom: 180px solid transparent;
+    border-left: 180px solid whitesmoke;
 }
 
 .box6 {
-  width: 0; 
-  height: 0; 
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent; 
-  
-  border-right:10px solid blue; 
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-top: 120px solid grey;
 }
 
 .box7 {
-    width: 100px;
-    height: 100px;
-    background-color: gray;
+    width: 0;
+    height: 0;
+    top: -2px;
+    right: -2px;
+    position: absolute;
+    border-top: 278px solid transparent;
+    border-bottom: 278px solid transparent;
+    border-right: 278px solid red; 
+
 }
 
 .box8 {
-    width: 100px;
-    height: 100px;
-    background-color: gray;
+    width: 0;
+    height: 0;
+    top: 365px;
+    left: 122px;
+    position: absolute;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-top: 160px solid lightgrey;
+    transform: rotate(45deg);
 }
-
