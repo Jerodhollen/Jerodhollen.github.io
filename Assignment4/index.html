@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assignment4/style.css">
+    <script src="/Assignment4/jquery.js"></script>
+    <script src="/Assignment4/main.js"></script>
+    <title>Assignment 4 | Interactive Idenities</title>
+</head>
+<body>
+
+    <header>
+        <h1>The Brain</h1>
+        <img src="media/brain.jpg" alt="">
+    </header>
+    
+    <div id="hero">
+        <p id="banner">Click On Either Of The Two Texts Below To Get Started!</p> 
+    </div>
+    
+    <div class="left-content">
+        <h2 id="left-brain"> Left Brain: Arithmetic, Computations, & Logic</h2>
+        <h4 id="h4-left"> My left-brain activities: </h4>
+            <ul>
+                <li id="coding">Coding:</li>
+                    <ul>
+                        <li id="csa"> My Job @ CSA (Cloud Security Alliance): <span id="click"> Click For More!</span></li>
+                            <p id="csa-text">I code for my job at CSA as a Junior Front-End Developer! 
+                                I love this position because it requires just a touch of my right brain 
+                                creativity to be used in unison with my left brain's computation and problem 
+                                solving skills to solve some rather large issues with or create new features 
+                                for our company's website! <span id="click"> Click for a picture of the crew! Can you find me?! ;D</span></p>
+                    
+                            <img id="csa-img" src="media/csa-img.jpg" alt="">
+                            
+                        <li id="wwu"> WWU: </li>
+                            <p id="wwu-text">I also am in the CS Major at WWU (duhh) but, that often invokes a
+                                 plethora of left-brain activity for me as well! Just getting through calculus, and even going further into 
+                                 linear algebra and series' all in the name of computer science are some of the most right brain
+                                 thing i've ever done. <span id="click"> Click this to collapse the left brain!</span></p>
+                    </ul>
+            </ul>
+    </div>
+
+     <!-- Float the "right-brain" stuff to the right put inside of its own div -->
+     <div class="right-content">
+        <h2 id="right-brain"> Right Brain: Musicality, Movement, & Self-Expression </h2>
+        <!-- Click on h4-left to show the first list item-->
+        <h4 id="h4-right"> My right brain activities: 
+            <ul>
+                <!-- Click on left to show the first image -->
+                <li id="music"> Music: <span id="click">Click here to reveal more stuff!</span></li>
+                    <ul>
+                        <!-- Click on music to show guitar -->
+                        <li id="guitar"> Guitar: <span id="click">Click Me!</span></li>
+                            <!-- Click on guitar to show p tag -->
+                            <p id="guitar-text">I started with guitar when I was 8 and it has been the truest form of self-expression for me ever since!
+                               <span id="click">Click on this text to reveal a video of me playing guitar!</span></p>
+                            <video id="guitar-vid" src="media/guitar.mp4" width="20%" controls></video>
+                        <!-- Click on drums to reveal p tag and  -->
+                        <li id="drums"> Drums:  <span id="click">Click Me!</span></li>
+                            <!-- Click on drums-text to reveal drum video -->
+                            <p id="drums-text"> The drums are relatively new for me, but have quickly become my new favorite thing to play, as of lately!
+                               <span id="click">Click on this text to reveal a video of me playing drums!</span> 
+                            </p>
+                        
+                        
+                            <video id="drum-vid" src="media/drums.mp4" controls></video>
+                            
+                                
+
+                    </ul>
+                <li id="skating"> Skateboarding: </li>
+                    <p id="skate-text"> Skateboarding is a very right-brain activity!
+                    <br> Not only am I using my right-brain for spatial reasoning, speed, and depth perception... but once all of that stuff becomes second nature, one can start performing tricks and infusing their own creativity to express themselves while skating! 
+                        <span id="click">Click here for a lil skate video! </span></p>
+                    <video id="skateboard-vid" src="media/skatebord.mp4" controls> 
+                        <p><span id="click"> Click this to collapse the left brain!</span></video></p>
+                    
+                </ul>
+        </h4>
+    </div>
+
+    
+        
+    
+    
+
+    <div class="clearfix"></div>
+    
+</body>
+</html>
