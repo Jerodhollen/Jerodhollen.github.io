@@ -1,5 +1,6 @@
 const api_url = 'http://api.open-notify.org/astros.json'
 async function getISS() {
+    
    const response = await fetch(api_url);
    const data = await response.json();
    const { number, people } = data;
