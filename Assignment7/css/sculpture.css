@@ -1,0 +1,640 @@
+/* Six-Strings Guitar Shop - Style Sheet */
+/* Jerod Hollen - November 20th, 2020 - CSCI 102 */
+
+/* Font Colors - #de9623 #6b3636 #FCE19A*/
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* Body Selector */
+body{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    line-height: 27px;
+    background: rgb(54,52,56);
+    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
+}
+
+/* Header Selector */
+header{
+    background: rgb(43,89,143);
+    background: linear-gradient(90deg, rgba(43,89,143,1) 33%, rgba(0,39,93,1) 100%);
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+/* Logo Style */
+.logo{
+    margin-left: 35px;
+    padding: 5px;
+}
+
+.logo img{
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    border: 3px solid #c8cdd2;
+}
+
+.topnav .icon{
+    display: none;
+}
+
+/* nav Selector */
+nav{
+    margin-top: 30px;
+}
+
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* nav a Selector */
+nav a{
+    font-weight: 500;
+    font-size: 2em;
+    font-family: 'Montserrat';
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #c8cdd2;
+    text-shadow: -0.5px 0 #c8cdd2, 0 0.5px #c8cdd2, 0.5px 0 #c8cdd2, 0 -0.5px #c8cdd2;
+    border-radius: 15px;
+    margin: 2px;
+}
+
+nav a:hover{
+    color: white;
+    transition-timing-function: ease;
+    transition-delay: 50ms;
+    text-decoration: none;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    background: linear-gradient(90deg, rgba(18,128,148,1) 0%, rgba(4,57,65,1) 35%, rgba(103,191,213,1) 100%); 
+}
+
+nav a:visited{
+    color: #c8cdd2;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px #FFC700;
+}
+
+nav a:active{
+    color: #07235a;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+
+/* clear fix */
+.clearfix{
+    clear: both;
+}
+
+/* Banner Style */
+.banner{
+    height: 87.81vh;
+    background-image: url('../stadium.jpeg');
+    background-size: cover;
+    border-bottom: 1px solid black;
+}
+
+/* Banner Content Style */
+.banner-content{
+    width: 100%;
+    line-height: 80px;
+    text-align: left;
+    padding-top: 120px;
+    padding-left: 100px;
+}
+
+
+/* banner-content h1 style */
+.banner-content h1{
+    font-weight: 700;
+    font-family: 'Montserrat';
+    color: #c8cdd2;
+    text-shadow: -1px 0 #002043, 0 1px #002043, 1px 0 #002043, 0 -1px #002043;
+    font-size: 4em;
+    padding-left: 40px;
+}
+
+/* banner-content h3 style */
+.banner-content h3{
+    font-weight: 700;
+    font-family: 'Montserrat';
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+
+
+/* main element Selector */
+main{
+    width: 100%;
+    margin: auto;
+    font-family: 'Texturina';
+}
+
+.view-container{
+    height: 100vh;
+    border-bottom: 0.01px solid black;
+    scroll-snap-align: top;
+}
+
+
+.col-12{
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+
+    background: rgb(43,89,143);
+background: linear-gradient(90deg, rgba(43,89,143,1) 33%, rgba(0,39,93,1) 100%);
+}
+
+.col-12 h1{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    width: 100%;
+    color: #fff;
+    font-size: 72px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    margin-top: 10px;
+}
+
+
+.col-sm-12, .col-lg-6, .col-lg-12{
+    padding: 30px;
+    
+}
+.col-sm-12 img, .col-lg-6 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 0 20px 60px black;
+}
+
+.thumbnail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Button Stuff */
+.button {
+    display: block;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+
+  /* Additional Button Stuff */
+  .button:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    text-decoration: none;
+  }
+
+  .location h3{
+      color: black;
+      line-height: 45px;
+      text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+      font-size: 2em;
+      text-align: center;
+      margin-top: 40px;
+  }
+
+  .location h6{
+    margin-bottom: 0;
+    font-weight: 300;
+    font-family: 'Texturina';
+    line-height: 2.5em;
+    padding: 15px;
+    box-shadow: 0 10px 20px black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    background: rgb(54,52,56);
+    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  }
+
+  .location img{
+      border-radius: 0 0  15px 15px;
+      border-top: none;
+      box-shadow: 0 10px 60px black;
+      height: 400px;
+  }
+
+  .sign{
+      color: black;
+      box-shadow: 0 5px 20px black;
+      background: radial-gradient(circle, rgba(255,199,0,1) 39%, rgba(222,150,35,1) 100%);
+      border-radius: 10px;
+      text-decoration: none;
+      text-align: center;
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .sign:hover{
+      color: white;
+
+  }
+  
+  .directions{
+      border-radius: 5px;
+      border: 1px solid black;
+      box-shadow: 0 5px 20px black;
+    background: rgb(43,89,143);
+    background: linear-gradient(90deg, rgba(43,89,143,1) 33%, rgba(0,39,93,1) 100%);
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      margin-top: 10px;
+      margin-left: 25%;
+      height: 35px;
+      width: 50%;
+  }
+
+  .directions:hover{
+      color: #FFC700;
+      background: linear-gradient(90deg, rgba(18,128,148,1) 0%, rgba(4,57,65,1) 35%, rgba(103,191,213,1) 100%);  
+  }
+
+  
+
+  .name{
+      font-style: italic;
+  }
+
+/* Left Column Layout */
+.design{
+    text-align: center;
+    padding: 7%;
+    border-radius: 15px;
+    background: rgb(200,205,210);
+    background: -moz-radial-gradient(circle, rgba(200,205,210,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(200,205,210,1) 0%, rgba(255,255,255,1) 100%);
+    background: radial-gradient(circle, rgba(200,205,210,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c8cdd2",endColorstr="#ffffff",GradientType=1);
+    box-shadow: 0 20px 60px black;
+    border: 1px solid black;
+    height: 100%;
+    
+}
+
+.design-form{
+    text-align: left;
+    color: #c8cdd2;
+    font-weight: bold;
+    line-height: 3em;
+    padding: 7%;
+    border-radius: 15px;
+    background: rgb(43,89,143);
+    background: linear-gradient(90deg, rgba(43,89,143,1) 33%, rgba(0,39,93,1) 100%);
+    box-shadow: 0 20px 60px black;
+    border-radius: 0 0  15px 15px;
+    border-top: none;
+    box-shadow: 0 10px 60px black;
+    height: 100%;
+    
+}
+.form-check{
+    padding-top: 30px;
+}
+.design.form{
+    text-align: left;
+    margin: 40px 20px;
+}
+
+/* design h1 selector */
+.design h1, .design h3{
+    margin-top: 10px;
+    padding: 15px;
+    margin-bottom: 0;
+    background: rgb(43,89,143);
+    background: linear-gradient(90deg, rgba(43,89,143,1) 33%, rgba(0,39,93,1) 100%);
+    border-radius: 15px 15px 0 0;
+    border: 1px solid black;
+    box-shadow: 0 10px 20px black;
+    font-family: 'Montserrat';
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.design h2{
+    padding: 10px;
+    font-family: 'Montserrat';
+    box-shadow: 0 10px 20px black;
+    color: black;
+    border: 1px solid black;
+    border-radius:  15px;
+    margin-top: 30px;
+    background: rgb(43,89,143);
+    background: linear-gradient(90deg, rgba(43,89,143,1) 33%, rgba(0,39,93,1) 100%);
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/* design p selector */
+.design p{
+    margin-bottom: 0;
+    font-weight: 300;
+    font-family: 'Texturina';
+    line-height: 2.5em;
+    padding: 15px;
+    box-shadow: 0 10px 20px black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 0 0 15px 15px;
+    background: rgb(54,52,56);
+    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+
+/* design dl */
+.design dl{
+    line-height: 30px;
+    box-shadow: 0 10px 20px black;
+    padding: 5px;
+    border: 1px solid black;
+    font-family: 'Texturina';
+    border-radius: 0 0 15px 15px;
+    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
+}
+
+/* design dt */
+.design dt{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.design dd{
+    padding: 10px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 15px;
+}
+
+ol, ul, li{
+    margin: 0;
+    padding: 0;
+}
+.design ol{
+    padding: 20px;
+    line-height: 30px;
+    text-align: left;
+    border-radius: 0 0 15px 15px;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
+}
+
+.design li{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 10px;
+}
+
+
+/* lessons */
+.lessons{
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 20px;
+    width: 500px;
+}
+
+.lessons img{
+    margin-top: 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 0 10px 20px black;
+}
+
+.lessons h1{
+    padding: 0;
+}
+
+.lessons dl{
+    border-top: none;
+    overflow: scroll;
+}
+
+
+/* link selector */
+.link{
+    text-decoration: none;
+    line-height: 3em;
+    color: #FFC700;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.table-container{
+    box-shadow: 0 10px 20px black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 0 0 15px 15px;
+    padding: 60px;
+    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    box-shadow: 0 2px 10px black;
+    border-collapse: collapse;
+    border-radius: 15px;
+    background: linear-gradient(90deg, rgba(193,183,203,1) 0%, rgba(224,219,211,1) 100%);
+    align-self: center;
+}
+
+
+td, th{
+    border-radius: 15px;
+    border-left:solid black 1px;
+    border-top:solid black 1px;
+    padding: 6px;
+    text-align: left center;
+    border-right: none;
+    border-bottom: none;
+    color: black;
+}
+
+tr{
+    border-right: none;
+}
+
+th {
+    border-top: none;
+    border-right: none;
+    font-weight: 700;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+     border-right: none;
+}
+
+caption{
+    font-weight: 700;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#wrapper{
+    min-height: 100%;
+    height: auto;
+    height: 100%;
+    margin: 0 auto -142px;
+}
+
+
+footer{
+    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
+    border-top: 2px solid black;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+footer .copy{
+    font-size: 20px;
+    color: #c8cdd2;
+    margin-top: 30px;
+}
+
+.btn.btn-primary{
+    background: rgb(200,205,210);
+    background: -moz-radial-gradient(circle, rgba(200,205,210,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(200,205,210,1) 0%, rgba(255,255,255,1) 100%);
+    background: radial-gradient(circle, rgba(200,205,210,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c8cdd2",endColorstr="#ffffff",GradientType=1);
+    border: 1px solid black;
+}
+
+.btn.btn-primary:hover{
+    border: 1px solid black;
+}
+
+
+/* nav media query */
+@media(max-width: 600px){
+    .logo {
+        display: none;
+    }
+
+    .col-12{
+        margin-top: 80px;
+        text-align: center;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        width: 100%;
+    
+        background: rgb(43,89,143);
+    background: linear-gradient(90deg, rgba(43,89,143,1) 33%, rgba(0,39,93,1) 100%);
+    }
+    .topnav a{display: none;}
+    .topnav a.icon {
+        display: flex;
+        padding-left: 15px;
+        padding-top: 10px;
+        height: 50px;
+        background: none;
+        color: #ffc700;
+        
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responive.icon a.icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    h1{
+        margin-top: 30px;
+    }
+
+    nav{
+        margin: 15px;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        z-index: 1;
+        border-radius: 15px;
+        border: 1px solid black;
+    }
+
+    nav a{
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+    }
+    
+    
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        
+    }
+
+    .banner{
+        display: none;
+    }
+    
+
+
+}
+
+@media(max-width: 1024px){
+
+    .logo{
+        margin-left: 10px;
+        margin-top: 2px;
+        background-image: url(../images/logo.png);
+        background-size: contain;
+        height: 95px;
+        width: 95px;
+        border-radius: 50%;
+        border: 3px solid #FCC700;
+    }
+
+    .logo img{
+        display: none;
+    }
+
+    nav a{
+        padding: 5px;
+        margin-right: 13px;
+    }
+
+    .banner{
+        display: none;
+    }
+}
