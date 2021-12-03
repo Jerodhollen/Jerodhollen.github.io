@@ -369,22 +369,7 @@ ol, ul, li{
     margin: 0;
     padding: 0;
 }
-.design ol{
-    padding: 20px;
-    line-height: 30px;
-    text-align: left;
-    border-radius: 0 0 15px 15px;
-    border-left: solid 1px black;
-    border-right: solid 1px black;
-    border-bottom: solid 1px black;
-    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
-}
 
-.design li{
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    padding: 10px;
-}
 
 
 /* lessons */
