@@ -51,6 +51,10 @@ body {
   margin-right: .75rem;
   margin-left: .75rem;
 }
+
+.button{
+  z-index: 1000;
+}
 /* rtl:end:ignore */
 
 

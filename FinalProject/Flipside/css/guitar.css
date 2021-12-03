@@ -370,6 +370,9 @@ ol, ul, li{
     padding: 0;
 }
 
+video::-webkit-media-controls-panel {
+    width: 40px;
+  }
 
 
 /* lessons */
